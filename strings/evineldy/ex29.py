@@ -1,6 +1,5 @@
 string = 'Coding For All'
-if string.startswith('Coding'):
+if string.endswith('coding'):
     print('YES')
 else:
     print('NO')
-    
