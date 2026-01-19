@@ -99,3 +99,10 @@ print(result)
 challenge = 'thirty days of pythonnn'
 print(challenge.strip('noth'))
 
+challenge = "thirty days of python"
+print(challenge.replace('python', 'coding'))
+
+challenge = 'thirty days of python'
+print(challenge.split())
+challenge = 'thirty, days, of, python'
+print(challenge.split(', '))
