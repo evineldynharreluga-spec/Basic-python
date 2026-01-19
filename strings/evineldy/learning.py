@@ -35,3 +35,41 @@ area = pi * radius ** 2
 python_libraries = ['Django', 'Flask', 'NumPy', 'Matplotlib', 'Pandas']
 formated_string = 'The following are python libraries: %s' % (python_libraries)
 print(formated_string)
+
+#new style formatting
+first_name = 'Evineldy'
+last_name = 'Nharreluga'
+language = 'Python'
+formated_string = 'I am {} {}. I teach {}'.format(first_name, last_name, language)
+print(formated_string)
+
+a = 4 
+b = 3
+
+print('{} + {} = {}'.format(a, b, a + b))
+print('{} / {} = {:.2f}'.format(a, b, a / b))
+
+#String interpolation
+a = 4
+b = 3
+print(f'{a} + {b} = {a + b}')
+
+#unpacking characters
+language = 'Python'
+a,b,c,d,e,f = language
+print(a), print(b), print(c), print(d), print(e), print(f)
+
+
+first_name = 'Evineldy' 
+a,b,c,d,e,f,g,h = first_name
+#print(a), print(b), print(c), print(d), print(e), print(f), print(g), print(h)
+#print(first_name[len(first_name) - 1])
+
+''''last_letter = first_name[-1]
+second_last = first_name[-2]
+print(second_last)'''
+
+
+
+
+
