@@ -1,0 +1,13 @@
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort()
+print(ages)
+ages.append(19)
+ages.append(26)
+print(ages)
+ages.sort()
+median = int(len(ages) / 2)
+#print(median)
+print((ages[5] + ages[6])/2)
+print(ages)
+print(sum(ages)/2)
+print(max(ages)-min(ages))
