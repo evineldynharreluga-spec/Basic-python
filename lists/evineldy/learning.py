@@ -61,3 +61,13 @@ last_index = len(fruits) - 1
 fruits[last_index] = 'lime'
 print(fruits)
 
+#testing
+fruits = []
+resp = ''
+while resp != 'N':
+    fruits.append(input('Enter the name of a fruit: ')) 
+    resp = input('Pretende continuar? [S/N]').upper()
+print(fruits)
+tamanho = len(fruits) - 1
+print(f'Vc introduziu {tamanho} frutas.')
+print(f'A ultima fruta introduzida foi: {fruits[tamanho]}')
