@@ -25,44 +25,44 @@ print(f'{lista[0]}\t{lista[1]}\t{lista[3]}')'''
 
 #Acessing list items using positive index
 fruits = ['Banana', 'orange', 'mango', 'lemon']
-print(f'First index: {fruits[0]}')
+''''print(f'First index: {fruits[0]}')
 print(f'Second index: {fruits[1]}')
 print(f'Third index: {fruits[2]}')
-print(f'Last index: {fruits[len(fruits)-1]}')
+print(f'Last index: {fruits[len(fruits)-1]}')'''
 
 #Acessing list items using negative index
-print(f'Last index: {fruits[-1]}')
+''''print(f'Last index: {fruits[-1]}')
 print(f'Second last: {fruits[-2]}')
-print(f'Third last: {fruits[-3]}')
+print(f'Third last: {fruits[-3]}')'''
 
 #Unpacking
 lista = ['item1', 'item2', 'item3']
 first_item, second_item, third_item = lista
-print(first_item)
+#print(first_item)
 
 first, second, third, *rest, tenth =[1,2,3,4,5,6,7,8,9,10]
-print(first)
+''''print(first)
 print(second)
 print(tenth)
-print(rest)
+print(rest)'''
 
 
 fruits = ['Banana', 'orange', 'mango', 'lemon']
 #slicing items
 all_fruits = fruits[-4:] 
 orange_and_mango = fruits[-3:-1]
-print(orange_and_mango)
+#print(orange_and_mango)
 
 #modifying lists
 fruits[0] = 'avocado'
-print(fruits)
+#print(fruits)
 fruits[1] = 'apple'
 last_index = len(fruits) - 1
 fruits[last_index] = 'lime'
-print(fruits)
+#print(fruits)
 
 #testing
-fruits = []
+'''fruits = []
 resp = ''
 while resp != 'N':
     fruits.append(input('Enter the name of a fruit: ')) 
@@ -70,4 +70,67 @@ while resp != 'N':
 print(fruits)
 tamanho = len(fruits) - 1
 print(f'Vc introduziu {tamanho} frutas.')
-print(f'A ultima fruta introduzida foi: {fruits[tamanho]}')
+print(f'A ultima fruta introduzida foi: {fruits[tamanho]}'''
+
+#checkking items in a list
+fruits = ['Banana', 'orange', 'mango', 'lemon']
+does_exist = 'banana' in fruits
+#print(does_exist)
+does_exist = 'lime' in fruits
+#print(does_exist)
+
+#adding items
+''''fruits.append('lime')
+print(fruits)'''
+
+#inserting items
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.insert(2, 'apple')
+#print(fruits)
+
+#removing items
+fruits.remove('banana')
+#print(fruits)
+
+#removing using pop
+fruits.pop()
+#print(fruits)
+fruits.pop(0)
+#print(fruits)
+
+#emptying the list
+fruits = ['banana', 'orange', 'mango', 'lemon']
+#fruits.clear()
+#print(fruits)
+
+#copying a list
+fruits_copy = fruits
+#print(fruits_copy)
+
+#joining lists
+#list3 = list1 + list2
+
+positive_numbers = [1,2,3,4,5]
+zero = [0]
+negative_numbers = [-5,-4,-3,-2,-1]
+#integers = negative_numbers + zero + positive_numbers
+positive_numbers.extend(negative_numbers)
+#print(positive_numbers)
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+print(fruits.count('lime'))
+
+#finding index
+print(fruits.index('orange'))
+
+#reversing a list
+fruits.reverse()
+print(fruits)
+
+#sorting items
+ages = [22, 19, 24, 25, 26, 25, 24]
+ages.sort()
+print(ages)
+
+ages.sort(reverse=True)
+print(ages)
