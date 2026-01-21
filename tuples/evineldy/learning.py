@@ -19,6 +19,7 @@ all_items = fruits[1:2]
 fruits = ('banana', 'orange', 'mango', 'lemon')
 fruits = list(fruits)
 fruits[0] = 'apple'
+fruits.insert(0, 'MACA')
 print(fruits)
 fruits = tuple(fruits)
 print(fruits)
@@ -35,5 +36,14 @@ fruits_and_vegetables = fruits + vegetables
 print(fruits_and_vegetables)
 
 fruits = ('banana', 'orange', 'mango', 'lemon')
-del fruits
+#del fruits
+print(fruits)
+
+
+fruits = ('banana', 'orange', 'mango', 'lemon')
+fruits = list(fruits)
+fruits[0] = 'apple'
+fruits.insert(0, 'MACA')
+print(fruits)
+fruits = tuple(fruits)
 print(fruits)
