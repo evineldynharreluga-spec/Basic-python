@@ -19,9 +19,15 @@ print(first_three_items)
 print(last_three_items)
 
 #deleting th efood_stuff_tp completely
-del food_stuff_tp
+#del food_stuff_tp
 print(food_stuff_tp)
 
 print(food_stuff_lt)
 
+string = 'a,e,i'
+a = string.split(',')
+print(a)
 
+string = ['HTML','CSS','JavaScript']
+joined = '# '.join(string)
+print(joined)
