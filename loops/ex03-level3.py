@@ -2619,9 +2619,42 @@ countries = [
     }
 ]
 
+soma = 0
+for country in countries:
+    soma += len(country.get('languages'))
+#print(soma)
 
-print('English' in countries)
 
+lista_set = []
 
+from collections import Counter
+for country in countries:
+    for language in country['languages']:
+        lista_set.append(language)
 
+language_count = Counter(lista_set)
+#print(language_count)
+ten_most_spoken = language_count.most_common(10)
 
+''''for language, count in ten_most_spoken:
+    print(language)'''
+
+top_10 = []
+countries_copy = []
+for country in countries:
+    countries_copy.append(country)
+
+for _ in range(10):
+    max_population = 0
+    most_populated = None
+    
+    for country in countries_copy:
+        if country['population'] > max_population:
+            max_population = country['population'] 
+            most_populated = country
+    top_10.append(most_populated)
+    countries_copy.remove(most_populated)
+
+for country in top_10:
+    print(country['name'], country['population'])
+    
