@@ -144,3 +144,62 @@ def generate_groups(team, *args):
 #generate_groups('Team-1', 'Evineldy', 'Pedro', 'Leao')
 
 
+
+
+
+
+''''lista = []
+for i in range(3):
+    lista.append(input('Nome: '))
+
+def cadastrar_nomes(lista):
+    return lista
+
+nomes = cadastrar_nomes(lista)
+print(nomes)'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def generate_full_name (first_name, last_name):
+    space = ' '
+    full_name = first_name + space + last_name
+    return full_name
+#print(generate_full_name())
+
+
+def name_age():
+    age = 21
+    name = generate_full_name('Evineldy', 'Nharreluga')
+    print(name, age)
+    
+
+name_age()
+
+lista = ['Evineldy', 'Nharreluga']
+def capitalize_list(listaa = []):
+    new_list = []
+    for item in listaa:
+        new_list.append(item.upper())
+    return new_list
+print(capitalize_list(lista))
+
