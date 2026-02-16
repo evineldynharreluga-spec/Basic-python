@@ -196,12 +196,14 @@ countries = [
   'Zimbabwe'
 ];
 
-land = []
-def categorize_countries(countries):
-    for country in countries: 
-        if 'bique' in country:
-            land.append(country)
-    return land
+dez = []
+def get_first_ten_countries(countries):
+    i = 0
+    for country in countries:
+        while i < 10:
+            dez.append(country)
+            i += 1
+    return dez
 
-print(categorize_countries(countries))
+print(get_first_ten_countries(countries))
 
