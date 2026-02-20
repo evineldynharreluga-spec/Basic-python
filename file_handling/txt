@@ -1,0 +1,54 @@
+lista = [1, 2, 3, 4]
+a, *resto = lista
+#print(resto)
+
+primeiro, segundo, *meio = [10, 20, 30, 40, 50]
+
+#print(meio)
+
+dados = [100, 200, 300]
+
+_, valor_importante, _ = dados
+
+#print(valor_importante)
+
+pares = [(1, 'A'), (2, 'B'), (3, 'C')]
+
+''''for numero in pares:
+    print(numero)'''
+
+f''''or numero, letra in pares:
+    print(numero, letra)
+
+pessoa = {
+    'nome': 'Evineldy',
+    'idade': 22
+}
+
+
+for k, v in pessoa.items():
+    print(k, v)
+
+
+def chave_valor(nome, idade):
+    print(nome, idade)
+
+
+
+print(novo)
+
+valores = []
+def soma(*args):
+    return sum(args)
+
+
+qtd = int(input('Quantos numeros queres somar? '))
+
+for i in range(qtd):
+    valores.append(int(input('Nr:' )))
+   
+
+resultado = soma(*valores)
+
+
+'''
