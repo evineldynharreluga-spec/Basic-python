@@ -92,4 +92,39 @@ print(habs)
 print('Java' in habs)
 
 
+person = {
+    'name': 'Evineldy',
+    "country": "Mozambique",
+    "city": "Maputo",
+    "skills": ["Networking", "Data Science", "Mentorship"]
+}
 
+
+person_json = json.dumps(person, indent=2)
+print(type(person_json))
+print(person_json)
+
+with open("C:/Users/Evineldy Nharreluga/Desktop/files/json_example.json", 'w', encoding='utf-8') as f:
+    json.dump(person, f, ensure_ascii=False, indent=4)
+
+
+
+import csv
+with open("C:/Users/Evineldy Nharreluga/Desktop/files/csv_example.csv") as f:
+    csv_reader = csv.reader(f, delimiter=',') # we use, reader method to read csv
+    line_count = 0
+    for row in csv_reader:
+        if line_count == 0:
+            print(f'Column names are :{", ".join(row)}')
+           #line_count += 1
+        else:
+            print(
+                f'{row[0]} is a teachers. He lives in {row[1]}, {row[2]}.')
+            #line_count += 1
+   # print(f'Number of lines:  {line_count}')
+
+
+lista = ['name', 'title', 'job']
+joined = ', '.join(lista)
+
+print(joined)
