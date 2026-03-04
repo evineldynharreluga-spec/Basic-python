@@ -1,4 +1,4 @@
-''''# criando uma classe
+# criando uma classe
 class Pessoa:
     def __init__(self, nome, idade):
         self.nome = nome
@@ -10,9 +10,9 @@ pessoa1 = Pessoa('Ana', 20)
 pessoa2 = Pessoa('Carlos', 25)
 
 print(pessoa1.nome)
-'''
 
-''''class Person:
+
+class Person:
     def __init__(self, firstname, lastname, age, country, city):
         # self allows to attach parameter to the class
         self.firstname = firstname
@@ -28,9 +28,9 @@ print(p.firstname)
 print(p.lastname)
 
 print(f'{p.firstname} {p.lastname} tem {p.age} anos de idade')
-'''
 
-''''class Person:
+
+class Person:
     def __init__(self, firstname, lastname, age):
         self.firstname = firstname
         self.lastname = lastname
@@ -39,11 +39,11 @@ print(f'{p.firstname} {p.lastname} tem {p.age} anos de idade')
         return f'{self.firstname} {self.lastname} tem {self.age} anos.'
 
 p = Person('Evineldy', 'Nharreluga', 22)
-print(p.person_info())'''
+print(p.person_info())
 
-# defining classes with default values to avoid errors
+#defining classes with default values to avoid errors
 
-''''class Person:
+class Person:
     def __init__(self, firstname='Evineldy', 
                  lastname='Nharreluga', age=22, 
                  country='Mozambique', city='Maputo'):
@@ -60,7 +60,7 @@ print(p1.person_info())
 
 p2 = Person('Ana', 'Macarringue', 15, 'Canada', 'Ottawa')
 print(p2.person_info())
-'''
+
 
 class Person:
     def __init__(self, firstname, lastname, age, country, city):
