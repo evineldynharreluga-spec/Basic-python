@@ -42,4 +42,5 @@ print('one dimensional array:', np_to_list)
 print('two dimensional array:', numpy_two_dimensional_list.tolist())
 
 
-python tuple = ()
+lista = [1,2, 3]
+print(lista)
